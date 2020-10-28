@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="semana3_CNavarro.MainPage">
+
+    <StackLayout>
+        <StackLayout>
+            <Label Text="LOGIN"  FontSize="Title" HorizontalTextAlignment="Center" TextColor="Black"></Label>
+
+            <Entry x:Name="txtUser" Placeholder="Ingrese El Usuario" HorizontalTextAlignment="Center"></Entry>
+            <Entry x:Name="txtPass" Placeholder="Ingrese Password" IsPassword="True" HorizontalTextAlignment="center"></Entry>
+            <Button x:Name="btnAbrirVentanaDos" Text="INGRESAR " Clicked="btnAbrirVentanaDos_Clicked"></Button>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
