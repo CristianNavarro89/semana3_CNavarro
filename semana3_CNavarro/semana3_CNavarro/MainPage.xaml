@@ -5,7 +5,7 @@
 
     <StackLayout>
         <StackLayout>
-            <Label Text="LOGIN"  FontSize="Title" HorizontalTextAlignment="Center" TextColor="Black"></Label>
+            <Label Text="Calificacion UISRAEL"  FontSize="Title" HorizontalTextAlignment="Center" TextColor="Black"></Label>
 
             <Entry x:Name="txtUser" Placeholder="Ingrese El Usuario" HorizontalTextAlignment="Center"></Entry>
             <Entry x:Name="txtPass" Placeholder="Ingrese Password" IsPassword="True" HorizontalTextAlignment="center"></Entry>

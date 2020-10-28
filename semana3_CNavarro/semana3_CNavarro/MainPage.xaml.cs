@@ -21,6 +21,7 @@ namespace semana3_CNavarro
             string pass = txtPass.Text;
             if (txtUser.Text == "estudiante2020" && txtPass.Text == "uisrael2020")
             {
+                await DisplayAlert("Bienvenido", "Acceso Correcto", "Ok");
                 await Navigation.PushAsync(new Vista_dos(user, pass));
             }
             else

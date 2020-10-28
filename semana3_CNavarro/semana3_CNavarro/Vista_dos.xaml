@@ -5,7 +5,53 @@
     <ContentPage.Content>
         <StackLayout>
             <Label x:Name="lbluser"></Label>
-            <Entry x:Name="txtPass"></Entry>
+            <Entry x:Name="txtPass" IsPassword="True"></Entry>
+
+            <Label Text="Calculador Calificaciones" HorizontalTextAlignment="Center" TextColor="Black"  FontSize="30">
+
+            </Label>
+
+            <Grid RowSpacing="2" ColumnSpacing="2" Padding="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition  Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition  Width="*" />
+                </Grid.ColumnDefinitions>
+                <Label Text="PRIMER PARCIAL" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" HorizontalTextAlignment="Center" TextColor="Black" FontSize="25"></Label>
+                <Label Text="Nota Seguimiento 1" Grid.Row="1" Grid.Column="0" HorizontalTextAlignment="Center" FontSize="20"></Label>
+                <Entry  Keyboard="Numeric" x:Name="entryNotaSeguimiento1" BackgroundColor="#03DAC6" Grid.Row="2" Grid.Column="0" PlaceholderColor="White" TextColor="White" HorizontalTextAlignment="Center" FontSize="20"/>
+                <Label Text="Exámen" Grid.Row="1" Grid.Column="1" HorizontalTextAlignment="Center" FontSize="20"></Label>
+                <Entry   Keyboard="Numeric" x:Name="entryExamen1" BackgroundColor="#03DAC6" Grid.Row="2" Grid.Column="1" PlaceholderColor="White" TextColor="White" HorizontalTextAlignment="Center" FontSize="20"/>
+                <Label x:Name="labelNotaParcial1" Text="NOTA PARCIAL:" BackgroundColor="Blue" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" HorizontalTextAlignment="Center" FontSize="20"></Label>
+
+                <Label Padding="5" Text="SEGUNDO PARCIAL" Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2" HorizontalTextAlignment="Center" TextColor="Black" FontSize="25"></Label>
+                <Label Text="Nota Seguimiento 1" Grid.Row="7" Grid.Column="0" HorizontalTextAlignment="Center" FontSize="20"></Label>
+                <Entry Keyboard="Numeric" x:Name="entryNotaSeguimiento2" BackgroundColor="#03DAC6" Grid.Row="8" Grid.Column="0" PlaceholderColor="White" TextColor="White" HorizontalTextAlignment="Center" FontSize="20"/>
+                <Label Text="Exámen" Grid.Row="7" Grid.Column="1" HorizontalTextAlignment="Center" FontSize="20"></Label>
+                <Entry  Keyboard="Numeric" x:Name="entryExamen2" BackgroundColor="#03DAC6" Grid.Row="8" Grid.Column="1" PlaceholderColor="White" TextColor="White" HorizontalTextAlignment="Center" FontSize="20"/>
+                <Label  x:Name="labelNotaParcial2" Text="NOTA PARCIAL:" BackgroundColor="Blue" Grid.Row="9" Grid.Column="0" Grid.ColumnSpan="2" HorizontalTextAlignment="Center" FontSize="20"></Label>
+
+                <Label x:Name="textnotaFinal" Text="NOTA FINAL: " BackgroundColor="Green" Grid.Row="10" Grid.Column="0"  TextColor="White" HorizontalTextAlignment="Center" FontSize="20"></Label>
+
+                <Label x:Name="textEstado" BackgroundColor="Green"  TextColor="White" Grid.Row="10" Grid.Column="1"  HorizontalTextAlignment="Center" FontSize="20"></Label>
+
+                <Button x:Name="btnCalcular" Text="Calcular"   Clicked="btnCalcular_Clicked"  Grid.Row="11" Grid.Column="0" Grid.ColumnSpan="2" ></Button>
+            </Grid>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
